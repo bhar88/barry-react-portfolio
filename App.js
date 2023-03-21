@@ -1,6 +1,6 @@
 // import { HashRouter } from 'react-router-dom'
 import './App.css';
-// import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Wrapper from './components/Wrapper';
 import Intro from './components/Intro';
@@ -12,7 +12,9 @@ import Footer from './components/Footer';
 
 import './App.css';
 function App() {
+  
   return (
+    <HashRouter>
     <Wrapper >
     <Navbar />
     <Intro />
@@ -22,9 +24,10 @@ function App() {
     <Contact />
     <Footer />
     </Wrapper>
+    </HashRouter>
 
-   
   );
+ 
 }
 
 export default App;
